@@ -8,13 +8,13 @@ env:
       - "WULd0QQOlRdci4AxyJQFNy7yPwBNXHfNTGhwvnHb+YbzdsmHMQXygaaIVox9is5G84Q2x6+ICmZV0PpxhDLkKgVqRT1WdHbp75ayx0/mebZPkpv9Imx8xvVWdC88l9u/wzGweue4I08EqGPNh/OVOtK+We3D+ewIxx9m0DV91pk="
 
 before_install:
-  - "wget https://s3.amazonaws.com/bundle-cache-builds/bundle_cache"
-  - "chmod +x ./bundle_cache"
-  - "sudo mv ./bundle_cache /usr/bin"
-  - "bundle_cache download"
+  - wget https://s3.amazonaws.com/bundle-cache-builds/bundle_cache
+  - chmod +x ./bundle_cache
+  - sudo mv ./bundle_cache /usr/bin
+  - bundle_cache download
 
 install:
-  - "bundle install --deployment --path .bundle"
+  - bundle install --deployment --path .bundle
 
 after_script:
-  - "bundle_cache upload"
+  - bundle_cache upload
