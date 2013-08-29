@@ -1,0 +1,5 @@
+rvm: 2.0.0
+
+before_install:
+  - "wget https://s3.amazonaws.com/bundle-cache-builds/bundle_cache"
+  - "sudo mv ./bundle_cache /usr/bin"
