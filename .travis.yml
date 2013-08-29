@@ -1,5 +1,10 @@
 rvm: 2.0.0
 
+secure:
+  - "mNd67Kf7ZxAoSa35mSYuqHmxwbmRKH5pGGLFIBi/iaeS6EQA+z6uCiT7i7crJE4pHH3yqLIe3QKb0IexG2bQ0DgAgyRmk/CExV/yRatt5Q2+h4xSuFpOVPhQdAD5fUZrV2yqn+vxiTc8teD64dU7bjbQYQtW/iUEW5ZdpRy+slw="
+  - "WggW/TTOnDJorCfO1fY3l1PHOO3/MY02XUg81egwxEPVn8HGUEQEBM2SqGm6Is9zOotExX//G4jPJQNvEw3EsE+ybUTKFrmwiCIjQDp7EU6JSlNicGZpLlnrg3teYa0Zhas+qALu7lTG7xeRWWvTOZsm4k3w9yAsUzaTbS3KiKg="
+  - "WULd0QQOlRdci4AxyJQFNy7yPwBNXHfNTGhwvnHb+YbzdsmHMQXygaaIVox9is5G84Q2x6+ICmZV0PpxhDLkKgVqRT1WdHbp75ayx0/mebZPkpv9Imx8xvVWdC88l9u/wzGweue4I08EqGPNh/OVOtK+We3D+ewIxx9m0DV91pk="
+
 before_install:
   - "wget https://s3.amazonaws.com/bundle-cache-builds/bundle_cache"
   - "sudo mv ./bundle_cache /usr/bin"
