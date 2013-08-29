@@ -10,7 +10,7 @@ before_install:
   - wget https://s3.amazonaws.com/bundle-cache-builds/bundle_cache
   - chmod +x ./bundle_cache
   - sudo mv ./bundle_cache /usr/bin
-  - bundle_cache download
+  - bundle_cache download ; echo "------> Bundle Cache"
 
 install:
   - bundle install --deployment --path .bundle
